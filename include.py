@@ -13,7 +13,7 @@ class Blockchain(object):
             previous_hash=
             "00000fee7780abb1aac28be835275675038b476eb592f8ec15caa6b3d65255b7",
             proof=0)
-        self.add_block(init_block)
+        self.chain.append(init_block)
 
 
     def new_block(self, proof=0, previous_hash=None):
