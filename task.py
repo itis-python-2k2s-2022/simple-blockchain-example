@@ -6,6 +6,7 @@ from include import Blockchain
 def find_proof_of_work(blockchain, block):
     """YOUR CODE"""
     # можно менять proof вот так: block['proof'] = 123
+    # можно проверить proof вот так: blockchain.block_proves_work(block)
     proof = "YOUR CODE"
     return proof
 
