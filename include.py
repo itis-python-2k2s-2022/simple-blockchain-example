@@ -9,7 +9,12 @@ class Blockchain(object):
         self.chain = []
         self.pending_transactions = []
         # добавляем первый блок для инициализации цепи
-        self.new_block(previous_hash="00000fee7780abb1aac28be835275675038b476eb592f8ec15caa6b3d65255b7", proof=0)
+        init_block = self.new_block(
+            previous_hash=
+            "00000fee7780abb1aac28be835275675038b476eb592f8ec15caa6b3d65255b7",
+            proof=0)
+        self.add_block(init_block)
+
 
     def new_block(self, proof=0, previous_hash=None):
         block = {
